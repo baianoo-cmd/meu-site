@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Enzo Dias</title>
+
+    <!-- Fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS: Biblioteca de Animações ao Rolar a Página -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Estilos CSS -->
+    <style>
+      body {
+        font-family: 'Inter', 'Roboto', sans-serif;
+        background: linear-gradient(to top, #e0e0e0, #f0f0f0);
+        margin: 0;
+        text-align: center;
+        color: #222;
+        padding: 20px;
+      }
+
+      header.cabecalho {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 25px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(6px);
+      }
+
+      .cabecalho h1 {
+        margin: 0;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .cabecalho h2 {
+        margin: 0;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(208, 206, 206);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 5px;
+        color: #111;
+      }
+
+      p, a, td, th {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      a {
+        color: rgb(0, 140, 255);
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+        text-underline-offset: 2px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: rgba(0, 218, 251, 0.829);
+      }
+
+      .perfil-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 30px 0;
+      }
+
+      .imagem-perfil-grande {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .imagem-perfil-grande:hover {
+        transform: scale(1.05);
+      }
+
+      .texto-apresentacao {
+        font-size: 40px;
+        max-width: 700px;
+        text-align: left;
+        color: #111;
+      }
+
+      .texto-apresentacao p {
+        font-size: 20px;
+        margin-top: 30px;
+        color: #333;
+      }
+
+      .box-tabela {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 40px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 100%;
+        color: #333;
+      }
+
+      th, td {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 12px;
+      }
+
+      th {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #111;
+      }
+
+      .hobbies {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .hobbies ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .hobbies li {
+        font-size: 18px;
+        padding: 6px 0;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1>Página Inicial de um Futuro Dev</h1>
+      <h2>Código Enzo: Versão 1.0</h2>
+    </header>
+
+    <div class="perfil-container">
+      <img src="enzo.jpg" alt="Foto de perfil de Enzo" class="imagem-perfil-grande" data-aos="zoom-in" />
+
+      <div class="texto-apresentacao" data-aos="fade-left">
+        <h2>Sobre mim</h2>
+        <p>Olá! Me chamo Enzo Dias, estou aprendendo a programar e este é meu site pessoal para um projeto da escola. Aqui você pode ver minhas notas e conhecer meu canal favorito.</p>
+        <p>
+          Visite meu canal favorito:
+          <a href="https://www.youtube.com/@matcliquecomprofessorlindomar" target="_blank">
+            Clique com Professor Lindomar
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="box-tabela" data-aos="fade-up">
+      <h2>Minhas Notas</h2>
+      <table>
+        <tr>
+          <th>Matéria</th>
+          <th>2023</th>
+          <th>2024</th>
+        </tr>
+        <tr>
+          <td>Português</td>
+          <td>8.5</td>
+          <td>9.0</td>
+        </tr>
+        <tr>
+          <td>Matemática</td>
+          <td>7.8</td>
+          <td>8.2</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="hobbies" data-aos="zoom-in">
+      <h2>Meus Hobbies</h2>
+      <ul>
+        <li>🏋️‍♂️ Academia</li>
+        <li>🏐 Jogar Vôlei</li>
+        <li>🎧 Ouvir música</li>
+        <li>💻 Progamar</li>
+      </ul>
+    </div>
+    <script>
+        AOS.init();
+      </script>
+  </body>
+</html>
